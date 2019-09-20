@@ -42,7 +42,7 @@ public class SortedNumbers {
 			first = false;
 			number = number / 10;
 		}
-		System.out.println(sorted);
+		System.out.println("Sorted numbers in increasing order :" + sorted);
 	}
 
 }
