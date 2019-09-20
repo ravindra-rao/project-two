@@ -17,5 +17,4 @@ public class Progression {
 			System.out.println(i + "			" + seriesDigit);
 		}
 	}
-
 }
