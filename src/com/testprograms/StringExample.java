@@ -69,20 +69,6 @@ public class StringExample {
 		this.name = name;
 		this.marks = marks;
 	}
-	
-	public static void main(String[] args) {
-		//testStringComparisonByEqualsOperator();
-		//testStringComparisonByEqualsMethod();
-		//testStringComparisonByCompareToMethod();
-		//testStringConcatenationByConcatOperator();
-		//testStringConcatenationByConcatMethod();
-		//testSubstring();
-		testStringClassMethods();
-
-
-		
-
-	}
 	public static String reverseCase(String text)
 	{
 	    char[] chars = text.toCharArray();
@@ -289,8 +275,13 @@ public class StringExample {
 		System.out.println(s10.length()); //28
 		System.out.println();
 		
+		//isBlank and isEmpty
+		System.out.println(s6.isBlank());
+		System.out.println(s6.isEmpty());
+		
 		//charAt
-		System.out.println(s6.charAt(1));
+		System.out.println(s6.charAt(1)); //aRequest you to please not cancel the order and deliver it as soon as possible.
+
 		//System.out.println(s6.charAt(10)); //StringIndexOutOfBoundsException
 		//System.out.println(s6.charAt(-1));  //StringIndexOutOfBoundsException
 		
@@ -399,6 +390,64 @@ public class StringExample {
 
 		System.out.println();
 		
+		//charAt
+		System.out.println(s6.charAt(0));
+		System.out.println(s9.charAt(0));
+		
+		//contains
+		System.out.println("Test contains");
+		System.out.println(s6.contains("cxh"));
+		
+		//indexOf
+		System.out.println("\nTest indexOf");
+		System.out.println(s6.indexOf("chi"));
+		
+		//split
+		System.out.println("Test split");
+		String[] temp = new String[10];
+		String[] temp2 = new String[50];
+		temp = s6.split("i");
+		temp2 = s10.split(" ");
+		
+		for(String element : temp) {
+			System.out.println(element);
+		}
+		
+		System.out.println("Test split by space");
+		for(String element : temp2) {
+			System.out.println(element);
+		}
+
+	
+		
+	}
+	public static void testStringFormatByFormatOperator() {
+		System.out.println(String.format("name is %s", s6));
+		System.out.println(String.format("name is %10s", s6));
+		System.out.println(String.format("value is %100s", 32.34534));
+		
+		System.out.println(String.format("value is %f", 32.34534));
+		System.out.println(String.format("value is %100f", 32.34534));
+		
+		//System.out.println(String.format("value is %100x", 32.34534)); //for %c, %d, %x etc java.util.IllegalFormatConversionException
+		System.out.println(String.format("value is %10d", 32));
+		System.out.println(String.format("value is %10x", 32));
+		//System.out.println(String.format("value is %10f", 32)); //java.util.IllegalFormatConversionException
+	}
+	
+	public static void main(String[] args) {
+		//testStringComparisonByEqualsOperator();
+		//testStringComparisonByEqualsMethod();
+		//testStringComparisonByCompareToMethod();
+		//testStringConcatenationByConcatOperator();
+		//testStringConcatenationByConcatMethod();
+		//testSubstring();
+		testStringClassMethods();
+		//testStringFormatByFormatOperator();
+
+
+		
+
 	}
 
 }

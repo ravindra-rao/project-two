@@ -9,7 +9,16 @@ public class Calc {
 	public static int iNum1, iNum2;
 
 	public static void main(String[] args) {
-		parseInput(getInput());
+		// To run it from console, fetch the input from getInput() method
+		// parseInput(getInput());
+		// To fetch the input from command line directly as arguments to the program's
+		// main method, use the below
+		// In commnand line, we will have to run java Calc.java 2*12 etc
+		parseInput(args[0]);
+
+		// To get input from console, do the below :
+		//parseInput(getInput());
+
 		int result = performOperation();
 		System.out.println(result);
 
