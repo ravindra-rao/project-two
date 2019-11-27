@@ -1,4 +1,4 @@
-package com.testprograms;
+package com.practiceprograms;
 
 public class ExampleStringClassesComparison {
 	public static void main(String[] args) {

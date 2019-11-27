@@ -1,4 +1,4 @@
-package com.testprograms;
+package com.practiceprograms;
 
 import java.util.StringTokenizer;
 
