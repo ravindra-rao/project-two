@@ -2,7 +2,7 @@ package com.testprograms;
 
 import java.util.Date;
 
-public class StringExample {
+public class ExampleString {
 	public static int i1 = 10;
 	public static Integer i2 = new Integer(100);
 	
@@ -60,11 +60,11 @@ public class StringExample {
 	public static String name;
 	public static double marks;
 	
-	public StringExample() {
+	public ExampleString() {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public StringExample(int rollno, String name, double marks) {
+	public ExampleString(int rollno, String name, double marks) {
 		this.rollNo = rollno;
 		this.name = name;
 		this.marks = marks;
@@ -380,7 +380,7 @@ public class StringExample {
 		System.out.println();
 		
 		//Overriding the toString method
-		StringExample example = new StringExample(101, "Sachin", 90.765);
+		ExampleString example = new ExampleString(101, "Sachin", 90.765);
 		System.out.println(example); //com.testprograms.StringExample@681a9515
 		System.out.println(example.toString()); //com.testprograms.StringExample@681a9515 //doesnt convert an object to string
 		//we can instead override the toString method from object class too as below
